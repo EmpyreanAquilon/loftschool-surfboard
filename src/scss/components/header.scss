@@ -1,0 +1,134 @@
+.header {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+}
+.header__logo {
+}
+.site-logo {
+}
+.site-logo__link {
+}
+.site-logo__img {
+}
+.header__nav {
+}
+.site-nav {
+    flex: 0 1 70%;
+}
+.site-nav__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.site-nav__item {
+}
+.site-nav__link:hover {
+    color: grey;
+}
+.header__contacts {
+}
+.site-contacts {
+    position: relative;
+    padding-left: 23px;
+    &::before {
+        content: "";
+        width: 13px;
+        height: 15px;
+        position: absolute;
+        left: 5px;
+        top: 2px;
+        background: url('./../../../img/icons/phone.svg') no-repeat;
+    }
+}
+.site-contacts__link:hover {
+    color: grey;
+}
+.burger {
+    display: none;
+    position: relative;
+    width: 26px;
+    height: 24px;
+    cursor: pointer;
+    span {
+        transition: all 0.3s;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        border-radius: 3px;
+        background: #fff;
+        
+    }
+    &--open span {
+        &:nth-child(1) {
+            top: 0;
+        }
+        &:nth-child(2) {
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        &:nth-child(3) {
+            bottom: 0;
+        }
+    }
+    &--close span {
+        &:nth-child(1) {
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+            display: none;
+        }
+        &:nth-child(3) {
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            transform: rotate(-45deg);
+
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .header {
+        background: #1968B1;
+    }
+    .site-nav {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: -100vh;
+        background: rgba(0,191,255,0.5);
+        transition: all 0.5s;
+    }
+    .site-nav--active {
+        top: 90px;
+    }
+    .site-nav__list {
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+    .site-nav__item {
+        margin-bottom: 10px;
+    }
+    .site-contacts {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+}
+@media(max-width:480px) {
+
+}

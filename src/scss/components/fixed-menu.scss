@@ -1,0 +1,37 @@
+.fixed-menu {
+    &__list {
+        position: fixed;
+        width: 20px;
+        height: 180px;
+        top: 50%;
+        right: 3%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        // position: relative;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #fff;
+        cursor: pointer;
+        box-shadow: 0 0 5px 1px #000;
+        &::after {
+            content: '';
+            display: block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin: -6px 0 0 -6px;
+            border: solid 1px transparent;
+            // background: rgba(75,0,130,0.5);
+        }
+    }
+    &__item--active::after {
+        border-color: #fff;
+        box-shadow: 0 0 4px #000, inset 0 0 4px #000;
+    }
+}
