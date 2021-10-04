@@ -1,6 +1,11 @@
+// variables
+$baseFontSize: 18px;
+$containerWidth: 1120px;
+
+// colors
 $bgGrey: #F8FAF9;
 
-
+@import "./media.scss";
 // components
 @import "./layout.scss";
 @import "./components/header.scss";

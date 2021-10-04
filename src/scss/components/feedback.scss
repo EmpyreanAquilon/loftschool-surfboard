@@ -18,7 +18,7 @@
 .feedback__list {
     max-width: 950px;
     display: flex;
-    // transform: translateX(-100%);
+    // transform: translateX(-200%);
 }
 .feedback-person {
     background: $bgGrey;
@@ -54,14 +54,18 @@
     display: flex;
     justify-content: center;
     &__item {
-        width: 74px;
-        height: 74px;
+        width: 84px;
+        height: 84px;
         border-radius: 50%;
         overflow: hidden;
         margin-right: 5px;
         cursor: pointer;
+        border: solid 5px transparent;
         &--active {
-            border: solid 5px #FEDB3F;
+            border-color: #FEDB3F;
+        }
+        &:hover {
+            border-color: #FEDB3F;
         }
     }
 }

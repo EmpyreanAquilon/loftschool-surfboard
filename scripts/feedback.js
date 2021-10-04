@@ -3,17 +3,23 @@ const feedbacks = document.querySelector('.feedback__list');
 const icons = document.querySelectorAll('.control-feedback__item');
 
 
-// for (item of icons) {
-//     item.addEventListener('click',console.log('wfgwh'))
-// }
-
-icons.forEach(function(item){
-    item.addEventListener('click',(item) => activeIcon(item))
-})
-function activeIcon(item) {
-    item.classList.toggle('control-feedback__item--active');
-    console.log('ydc')
+for (icon of icons) {
+    icon.addEventListener('click', e => {
+        console.log('yeah')
+        icon.classList.remove('control-feedback__item--active')
+        e.target.parentElement.classList.add('control-feedback__item--active');
+        console.log(e.target.parentElement)
+    })
 }
+// icons.forEach((icon) => icon.addEventListener('click', () => console.log('yeah')))
+
+// icons.forEach(function(item){
+//     item.addEventListener('click',(item) => activeIcon(item))
+// })
+// function activeIcon(item) {
+//     item.classList.add('control-feedback__item--active');
+//     console.log('ydc')
+// }
 
 // for (let icon = 0; icon < icons.length; icon++) {
 //     icon.addEventListener('click', () => {

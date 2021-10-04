@@ -11,19 +11,25 @@
 }
 .shop__slider {
     overflow: hidden;
+    // border: solid 1px black;
 }
 .shop__slider-track {
     display: flex;
+    transform: translateX(0%);
     transition: .3s;
+    position: relative;
+    right: 0%;
 }
 
 .slide {
+//     &:nth-child(1) {background: rgba(255,20,147,0.5)}
+//     &:nth-child(2) {background: rgba(47,79,79,0.5);}
     min-width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     &__picture {
-        background: url('./../../../img/picture/spot.svg') center/100% no-repeat;
+        background: url('/img/picture/spot.svg') center/100% no-repeat;
         width: 400px;
         height: 400px;
         position: relative;
@@ -48,7 +54,6 @@
         margin: 52px 0 24px;
     }
     &__desc {
-        font-size: 18px;
         line-height: 21px;
     }
     &__row {
@@ -76,7 +81,7 @@
 }
 
 .board-parameters {
-    background: #3A587E url(./../../../img/icons/parameters.svg) center 30% no-repeat;
+    background: #3A587E url('/img/icons/parameters.svg') center 30% no-repeat;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
@@ -106,7 +111,7 @@
     }
 
     &:hover {
-        background: #273d5a url(./../../../img/icons/parameters.svg) center 30% no-repeat;
+        background: #273d5a url('/img/icons/parameters.svg') center 30% no-repeat;
     }
     &:hover .board-parameters__dropdown {
         display: flex;
@@ -116,11 +121,11 @@
         &-1 {
             width: 30px;
             background: 
-            url(./../../../img/icons/parameters/length.svg) center 4% no-repeat, 
-            url(./../../../img/icons/parameters/width.svg) center 28% no-repeat,
-            url(./../../../img/icons/parameters/thickness.svg) center 52% no-repeat,
-            url(./../../../img/icons/parameters/life_time.svg) center 75% no-repeat,
-            url(./../../../img/icons/parameters/weight.svg) center 99% no-repeat;
+            url('/img/icons/parameters/length.svg') center 4% no-repeat, 
+            url('/img/icons/parameters/width.svg') center 28% no-repeat,
+            url('/img/icons/parameters/thickness.svg') center 52% no-repeat,
+            url('/img/icons/parameters/life_time.svg') center 75% no-repeat,
+            url('/img/icons/parameters/weight.svg') center 99% no-repeat;
         }
         &-2 {
             text-align-last: left;

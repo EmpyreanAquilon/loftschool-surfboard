@@ -1,5 +1,5 @@
 .hero {
-    background: #B8B6D1 url('./../../img/backgrounds/arnaud-mesureur-17OxKyThYPo-unsplash_1.png') center/auto 100% no-repeat;
+    background: #B8B6D1 url('/img/backgrounds/arnaud-mesureur-17OxKyThYPo-unsplash_1.png') center/auto 100% no-repeat;
     color: #fff;
     height: 100vh;
     text-shadow: 0 1px 2px black;
@@ -38,14 +38,15 @@
     font-weight: 800;
     line-height: 18px;
     text-align: center;
-    padding: 21px 41px;
+    // padding: 21px 41px;
+    padding: rem(21px) rem(41px);
     color: #000;
     text-transform: uppercase;
     border-radius: 50px;
     border: none;
     cursor: pointer;
     &:hover {
-        background: #FFD517;
+        background: #cca806;
     }
     &--transparent {
         background: transparent;
@@ -79,13 +80,13 @@
         left: 0;
     }
     &:first-child::before {
-        background: url('./../../../img/icons/advantage_1.svg') no-repeat;
+        background: url('/img/icons/advantage_1.svg') no-repeat;
     }
     &:nth-child(2)::before {
-        background: url('./../../../img/icons/advantage_2.svg') no-repeat;
+        background: url('/img/icons/advantage_2.svg') no-repeat;
     }
     &:last-child::before {
-        background: url('./../../../img/icons/advantage_3.svg') no-repeat;
+        background: url('/img/icons/advantage_3.svg') no-repeat;
     }
 }
 
@@ -95,9 +96,10 @@
     }
     .hero__container {
         // background: url('./../../img/backgrounds/arnaud-mesureur-17OxKyThYPo-unsplash_1.png') center/auto 100% no-repeat;
+        padding: 0;
     }
     .hero__content {
-        background: url('./../../img/backgrounds/arnaud-mesureur-17OxKyThYPo-unsplash_1.png') 90%/auto 100% no-repeat;
+        background: url('/img/backgrounds/arnaud-mesureur-17OxKyThYPo-unsplash_1.png') 90%/auto 100% no-repeat;
         width: 100%;
         text-align: center;
         flex: 1 1 auto;

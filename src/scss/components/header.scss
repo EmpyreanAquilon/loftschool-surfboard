@@ -3,12 +3,13 @@
     font-size: 18px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 25px 30px;
 }
 .header__logo {
 }
 .site-logo {
+    flex-shrink: 0;
 }
 .site-logo__link {
 }
@@ -21,11 +22,12 @@
 }
 .site-nav__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-
+    flex-wrap: wrap;
 }
 .site-nav__item {
+    margin-right: 25px;
 }
 .site-nav__link:hover {
     color: grey;
@@ -42,7 +44,7 @@
         position: absolute;
         left: 5px;
         top: 2px;
-        background: url('./../../../img/icons/phone.svg') no-repeat;
+        background: url('/img/icons/phone.svg') no-repeat;
     }
 }
 .site-contacts__link:hover {

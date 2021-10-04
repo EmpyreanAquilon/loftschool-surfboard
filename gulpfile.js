@@ -11,6 +11,7 @@ task('copy', () => {
     return src('src/**/*.scss').pipe(dest('dist'))
 });
 
+
 const styles = [
     "node_modules/normalize.css/normalize.css",
     "src/scss/main.scss"

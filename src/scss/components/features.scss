@@ -67,18 +67,17 @@
         content: '';
         width: 68px;
         height: 68px;
-        // background: url('./../../../img/icons/feature_1.svg') center no-repeat;
     }
 }
 .features__item {
     &:first-child .features__icon::after {
-        background: url('./../../../img/icons/feature_1.svg') center no-repeat;
+        background: url('/img/icons/feature_1.svg') center no-repeat;
     }
     &:nth-child(3) .features__icon::after {
-        background: url('./../../../img/icons/feature_2.svg') center no-repeat;
+        background: url('/img/icons/feature_2.svg') center no-repeat;
     }
     &:last-child .features__icon::after {
-        background: url('./../../../img/icons/feature_3.svg') center no-repeat;
+        background: url('/img/icons/feature_3.svg') center no-repeat;
     }
 }
 .features__name {
