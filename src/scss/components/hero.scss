@@ -1,5 +1,5 @@
 .hero {
-    background: #B8B6D1 url('/img/backgrounds/arnaud-mesureur-17OxKyThYPo-unsplash_1.png') center/auto 100% no-repeat;
+    background: #B8B6D1 url('../img/backgrounds/arnaud-mesureur-17OxKyThYPo-unsplash_1.png') center/auto 100% no-repeat;
     color: #fff;
     height: 100vh;
     text-shadow: 0 1px 2px black;
@@ -17,12 +17,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-.hero__block {
-
-}
-.hero__title {
-
 }
 .hero__subtitle {
     margin: 17px 0 39px;
@@ -61,32 +55,38 @@
     }
 }
 
-.hero__advantages {
+.adv-hero {
     padding-bottom: 70px;
     display: flex;
     justify-content: space-between;
     font-size: 16px;
-}
-
-.adv-hero__advantage {
-    position: relative;
-    width: 135px;
-    padding: 0px 0px 0px 45px;
-    &::before {
-        content: "";
-        width: 35px;
-        height: 35px;
-        position: absolute;
-        left: 0;
+    svg {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 5px 10px 0 0;
     }
-    &:first-child::before {
-        background: url('/img/icons/advantage_1.svg') no-repeat;
-    }
-    &:nth-child(2)::before {
-        background: url('/img/icons/advantage_2.svg') no-repeat;
-    }
-    &:last-child::before {
-        background: url('/img/icons/advantage_3.svg') no-repeat;
+    &__advantage {
+        position: relative;
+        width: 140px;
+        display: flex;
+        // padding: 0px 0px 0px 45px;
+        // &::before {
+        //     content: "";
+        //     width: 35px;
+        //     height: 35px;
+        //     position: absolute;
+        //     left: 0;
+        // }
+        // &:first-child::before {
+        //     background: url('/img/icons/advantage_1.svg') no-repeat;
+        // }
+        // &:nth-child(2)::before {
+        //     background: url('/img/icons/advantage_2.svg') no-repeat;
+        // }
+        // &:last-child::before {
+        //     background: url('/img/icons/advantage_3.svg') no-repeat;
+        // }
     }
 }
 
@@ -95,11 +95,10 @@
         background: #B8B6D1;
     }
     .hero__container {
-        // background: url('./../../img/backgrounds/arnaud-mesureur-17OxKyThYPo-unsplash_1.png') center/auto 100% no-repeat;
         padding: 0;
     }
     .hero__content {
-        background: url('/img/backgrounds/arnaud-mesureur-17OxKyThYPo-unsplash_1.png') 90%/auto 100% no-repeat;
+        background: url('../img/backgrounds/arnaud-mesureur-17OxKyThYPo-unsplash_1.png') 90%/auto 100% no-repeat;
         width: 100%;
         text-align: center;
         flex: 1 1 auto;

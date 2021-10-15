@@ -2,14 +2,12 @@
     background: #707070;
     color: #fff;
     min-height: 652px;
-    padding-top: 62px;
 }
 .order__container {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.order__content {
+    position: relative;
 }
 .order__title {
     text-align: center;
@@ -35,9 +33,6 @@
     &:last-child {
         margin-right: 0;
     }
-}
-.form__title {
-
 }
 .form__input {
     width: 100%;
@@ -95,7 +90,7 @@
             height: 100%;
             top: 0;
             left: 0;
-            background: url('./../../../img/icons/other/check-yellow.svg') center/60% no-repeat;
+            background: url('../img/icons/check-yellow.svg') center/60% no-repeat;
         }
     }
 }

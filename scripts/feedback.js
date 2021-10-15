@@ -1,36 +1,22 @@
-const feedbacks = document.querySelector('.feedback__list');
-// const feedbacks = document.querySelectorAll('.feedback-person');
-const icons = document.querySelectorAll('.control-feedback__item');
-
-
-for (icon of icons) {
-    icon.addEventListener('click', e => {
-        console.log('yeah')
-        icon.classList.remove('control-feedback__item--active')
-        e.target.parentElement.classList.add('control-feedback__item--active');
-        console.log(e.target.parentElement)
-    })
-}
-// icons.forEach((icon) => icon.addEventListener('click', () => console.log('yeah')))
-
-// icons.forEach(function(item){
-//     item.addEventListener('click',(item) => activeIcon(item))
+// $(".control-feedback__item").click(e => {
+//     // e.preventDefault();
+//     // console.log("работает")
+//     console.log($(this).is(".control-feedback__item--active"))
+//     // if ($(this).closest("control-feedback__item").is("control-feedback__item--active")) {
+//     //     console.log("работает")
+//     // }
 // })
-// function activeIcon(item) {
-//     item.classList.add('control-feedback__item--active');
-//     console.log('ydc')
-// }
 
-// for (let icon = 0; icon < icons.length; icon++) {
-//     icon.addEventListener('click', () => {
-//         console.log('adad');
-//     })
-// }
-// for (icon of icons) {
-//     let index = 0;
-//     icon.addEventListener('click', () => console.log('hrs'));
-//     index++;
-//     console.log(index);
-    
-// }
+$(document).on("click", ".control-feedback__item", function() {
+    if (!$(this).is(".control-feedback__item--active")) {
+        // console.log("нет класса актив");
+        $(".control-feedback__item").removeClass("control-feedback__item--active");
+        $(".feedback-person").removeClass("feedback-person--active");
+        $(this).addClass("control-feedback__item--active");
+        let numberIndex = $(this).index();
+        $(".feedback__list").find(".feedback-person:eq(" + numberIndex + ")").addClass("feedback-person--active");
+        $(".feedback-person").css("margin-left", `0%`)
+        $(".feedback-person--active").css("margin-left", `${numberIndex * -100}%`)
+    }
+});
 

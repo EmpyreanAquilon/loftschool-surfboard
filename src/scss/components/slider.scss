@@ -20,10 +20,10 @@
     &--active {
         flex: 7;
     }
-    &--1 {background-image: url('/img/backgrounds/Screenshot_2.jpg');}
-    &--2 {background-image: url('/img/backgrounds/Screenshot_1.jpg');}
-    &--3 {background-image: url('/img/backgrounds/Screenshot_3.jpg');}
-    &--4 {background-image: url('/img/backgrounds/Screenshot_4.jpg');}
+    &--1 {background-image: url('../img/backgrounds/Screenshot_2.jpg');}
+    &--2 {background-image: url('../img/backgrounds/Screenshot_1.jpg');}
+    &--3 {background-image: url('../img/backgrounds/Screenshot_3.jpg');}
+    &--4 {background-image: url('../img/backgrounds/Screenshot_4.jpg');}
 }
 .slider__name {
     font-size: 48px;

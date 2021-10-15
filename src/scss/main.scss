@@ -5,6 +5,10 @@ $containerWidth: 1120px;
 // colors
 $bgGrey: #F8FAF9;
 
+//JS components
+// @import "https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css";
+// @import "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css";
+
 @import "./media.scss";
 // components
 @import "./layout.scss";
@@ -12,7 +16,7 @@ $bgGrey: #F8FAF9;
 @import "./components/hero.scss";
 @import "./components/features.scss";
 @import "./components/shop.scss";
-@import "./components/team.scss";
+@import "./components/team-section.scss";
 @import "./components/slider.scss";
 @import "./components/feedback.scss";
 @import "./components/video.scss";
@@ -20,4 +24,5 @@ $bgGrey: #F8FAF9;
 @import "./components/map.scss";
 @import "./components/footer.scss";
 @import "./components/fixed-menu.scss";
+@import "./components/modal.scss";
 

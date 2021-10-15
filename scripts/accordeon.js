@@ -1,11 +1,11 @@
-document.querySelectorAll('.persons__name').forEach((itemName) => 
-    itemName.addEventListener('click', () => {
-        const parent = itemName.parentElement;
-        if (!parent.classList.contains('persons__item--active')) {
-            document.querySelectorAll('.persons__item').forEach((item) => item.classList.remove('persons__item--active'))
-        }
+$(document).on("click", ".team__name", function() {
+    if(!(($(this).closest(".accordion-desktop").is(".accordion-desktop--active"))||($(this).closest(".accordion-mobile").is(".accordion-mobile--active")))) {
+        // console.log("работает");
+        $(".accordion-desktop").removeClass("accordion-desktop--active");
+        $(this).closest(".accordion-desktop").addClass("accordion-desktop--active");
+        $(".accordion-mobile").removeClass("accordion-mobile--active");
+        $(this).closest(".accordion-mobile").addClass("accordion-mobile--active");
+    }
+})
 
-        parent.classList.toggle('persons__item--active')
-    })
-)
 

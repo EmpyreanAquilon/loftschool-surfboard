@@ -1,6 +1,6 @@
 // const container = document.querySelector('.shop__slider')
-const track = document.querySelector('.shop__slider-track')
 // const item = document.querySelectorAll('.slide')
+const track = document.querySelector('.shop__slider-track')
 const btnNext = document.querySelector('.controls-arrow__right')
 const btnPrev = document.querySelector('.controls-arrow__left')
 

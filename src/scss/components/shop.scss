@@ -9,10 +9,6 @@
     flex-direction: column;
     justify-content: center;
 }
-.shop__slider {
-    overflow: hidden;
-    // border: solid 1px black;
-}
 .shop__slider-track {
     display: flex;
     transform: translateX(0%);
@@ -81,19 +77,22 @@
 }
 
 .board-parameters {
-    background: #3A587E url('/img/icons/parameters.svg') center 30% no-repeat;
+    background: #3A587E;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 62px;
+    // padding-top: 62px;
     width: 90px;
     height: 90px;
     border-radius: 5px;
     cursor: pointer;
     position: relative;
-
+    svg {
+        width: 56px;
+        height: 56px;
+    }
     &__dropdown {
         position: absolute;
         top: 0;
@@ -111,7 +110,7 @@
     }
 
     &:hover {
-        background: #273d5a url('/img/icons/parameters.svg') center 30% no-repeat;
+        background: #273d5a url('../img/icons/parameters.svg') center 30% no-repeat;
     }
     &:hover .board-parameters__dropdown {
         display: flex;
@@ -119,13 +118,12 @@
 
     &__column {
         &-1 {
+            padding-top: 7px;
             width: 30px;
-            background: 
-            url('/img/icons/parameters/length.svg') center 4% no-repeat, 
-            url('/img/icons/parameters/width.svg') center 28% no-repeat,
-            url('/img/icons/parameters/thickness.svg') center 52% no-repeat,
-            url('/img/icons/parameters/life_time.svg') center 75% no-repeat,
-            url('/img/icons/parameters/weight.svg') center 99% no-repeat;
+            svg {
+                width: 35px;
+                height: 29px;
+            }
         }
         &-2 {
             text-align-last: left;
