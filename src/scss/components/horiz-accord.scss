@@ -1,8 +1,6 @@
 .horizontal-accordion {
     color: #fff;
-    &__container {
-
-    }
+    height: 100vh;
 }
 .hor-acc {
     display: flex;
@@ -13,6 +11,7 @@
         background-position: center;
         background-repeat: no-repeat;
         display: flex;
+        order: 1;
     }
     &__trigger {
         position: relative;
@@ -52,6 +51,7 @@
     &__item--menu {
         background-image: url('../img/backgrounds/Screenshot_2.jpg');
         flex-grow: 1;
+        order: 0;
         min-width: 100px;
         padding: 100px 0 0 40px;
         font-size: 48px;
@@ -68,6 +68,19 @@
     }
 }
 
+@media(max-width:480px) {
+    .hor-acc__item--menu {
+        padding: 0;
+        min-width: 0;
+        flex: 1 1 0;
+    }
+    .hor-acc__item--active {
+        order: 0;
+        .hor-acc__content {
+            width: 78vw;
+        }
+    }
+}
 
 
 // .slider__content {

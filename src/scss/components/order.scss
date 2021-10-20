@@ -52,6 +52,9 @@
         height: 150px;
         resize: none;
     }
+    &-error {
+        border-color: #f82222;
+    }
 }
 .form__input:focus {
     border-color: #FEDB3F;

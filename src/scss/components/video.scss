@@ -23,7 +23,7 @@
     max-width: 660px;
     min-height: 400px;
     margin: auto;
-
+    color: #fff;
     &__wrapper {
     }
     &__elem {
@@ -37,16 +37,19 @@
         align-items: center;
         padding: 0 5px;
         margin-top: -6px;
+        position: relative;
     }
     &__start {
         background: none;
         border: none;
         padding: 5px 10px;
         color: #fff;
+        cursor: pointer;
     }
     &__playback {
         width: 400px;
         height: 18px;
+        cursor: pointer;
         position: relative;
         &::before {
             content: "";
@@ -77,9 +80,21 @@
         background: #FEDB3F;
     }
     &__duration {
-        color: #fff;
+        padding-right: 10px;
     }
     &__volume {
+        position: relative;
+        &-sound {
+            background: none;
+            border: none;
+            padding: 5px 10px;
+            color: #fff;
+            position: absolute;
+            top: 1px;
+            right: 45px;
+            cursor: pointer;
+        }
+        cursor: pointer;
         width: 40px;
         height: 18px;
         position: relative;
@@ -100,6 +115,7 @@
         position: absolute;
         top: 8px;
         left: 0;
+        z-index: 2;
     }
     &__volume-button {
         width: 10px;

@@ -15,6 +15,13 @@ const coords = [
     [56.82930801, 60.60377482]
 ];
 
+// let myPlacemark = new ymaps.GeoObject({
+//     geometry: {
+//         type: "Point",
+//         coordinates: [56.81481203, 60.64051036]
+//     }
+// });
+
 const myCollection = new ymaps.GeoObjectCollection({}, {
     // preset: 'islands#redDotIcon',
     draggable: false,

@@ -106,14 +106,14 @@
     .site-nav {
         position: absolute;
         width: 100%;
-        height: 100vh;
+        height: 90vh;
         left: 0;
         top: -100vh;
         background: rgba(25, 104, 177, 0.9);
         transition: all 0.5s;
     }
     .site-nav--active {
-        top: 98px;
+        top: 10vh;
     }
     .site-nav__list {
         flex-direction: column;

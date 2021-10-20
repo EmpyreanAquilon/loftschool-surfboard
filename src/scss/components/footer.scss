@@ -25,15 +25,6 @@
         width: 18px;
         height: 15px;
     }
-    &::before {
-        content: "";
-        width: 13px;
-        height: 15px;
-        position: absolute;
-        left: 4px;
-        top: 6px;
-        background: url('/img/icons/social/phone.svg') center/100% no-repeat;
-    }
 }
 
 .social-buttons {

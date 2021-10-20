@@ -1,11 +1,11 @@
 let player;
 const playerWrapper = $(".player")
 const play = $("#play")
+const volume = $("#volume")
 
 let eventsInit = () => {
     $(".player__start").click(e => {
         e.preventDefault();
-
         if (play.hasClass("fa-pause")) {
             play.removeClass("fa-pause");
             play.addClass("fa-play");
@@ -26,6 +26,34 @@ let eventsInit = () => {
         $(".player__playback-button").css({left:`${newButtonPositionPercent}%`})
 
         player.seekTo(newPlaybackPositionSec)
+    })
+}
+
+let playerSound = () => {
+    $(".player__volume-sound").click(e => {
+        e.preventDefault();
+        if (volume.hasClass("fa-volume-up")) {
+            volume.removeClass("fa-volume-up");
+            volume.addClass("fa-volume-off");
+            player.mute()
+        } else {
+            volume.removeClass("fa-volume-off");
+            volume.addClass("fa-volume-up");
+            player.unMute()
+        }
+    });
+    $(".player__volume").click(e => {
+        const barV = $(e.currentTarget);
+        const clickedPositionV = e.originalEvent.layerX;
+        const newButtonPositionPercentV = (clickedPositionV / barV.width()) * 100;
+        console.log('позиция: '+newButtonPositionPercentV)
+
+        const newVolumePosition = Math.floor(newButtonPositionPercentV)
+
+        console.log('расчет: '+newVolumePosition)
+        $(".player__volume-button").css({left:`${newButtonPositionPercentV}%`})
+
+        player.setVolume(newVolumePosition)
     })
 }
 
@@ -84,3 +112,4 @@ function onYouTubeIframeAPIReady() {
 };
 
 eventsInit()
+playerSound()

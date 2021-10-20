@@ -10,7 +10,6 @@ const performTransition = sectionEq => {
         inScroll = true;
         const position = sectionEq * -100;
         const sideMenu = $(".fixed-menu");
-        console.log(sectionEq)
 
         display.css({transform:`translateY(${position}%)`});
         sections.eq(sectionEq).addClass("section--active").siblings().removeClass("section--active");
