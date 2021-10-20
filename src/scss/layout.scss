@@ -8,6 +8,7 @@ html,body {
     font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
     font-size: $baseFontSize;
     line-height: 1.43;
+    overflow: hidden;
 }
 a {
     color: inherit;
@@ -25,8 +26,12 @@ img {
 .wrapper {
     position: relative;
     width: 100%;
-    min-height: 100vh;
-    overflow: hidden;
+    // min-height: 100vh;
+    // overflow: hidden;
+    height: 100%;
+    transform: translateY(0%);
+    transition: transform 1s;
+    will-change: transform;
 }
 .container {
     max-width: 1120px;

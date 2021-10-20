@@ -1,7 +1,16 @@
 .order {
-    background: #707070;
     color: #fff;
     min-height: 652px;
+    position: relative;
+}
+.order__background-filter {
+    background: url('../img/backgrounds/HD-Surfing.jpg') center/cover no-repeat;
+    filter: grayscale(1) brightness(.4) blur(2px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 .order__container {
     display: flex;

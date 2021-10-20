@@ -5,7 +5,11 @@ $(document).on("click", ".team__name", function() {
         $(this).closest(".accordion-desktop").addClass("accordion-desktop--active");
         $(".accordion-mobile").removeClass("accordion-mobile--active");
         $(this).closest(".accordion-mobile").addClass("accordion-mobile--active");
+    } else {
+        $(".accordion-desktop").removeClass("accordion-desktop--active");
+        $(".accordion-mobile").removeClass("accordion-mobile--active");
     }
 })
+
 
 

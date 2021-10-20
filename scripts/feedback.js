@@ -1,12 +1,3 @@
-// $(".control-feedback__item").click(e => {
-//     // e.preventDefault();
-//     // console.log("работает")
-//     console.log($(this).is(".control-feedback__item--active"))
-//     // if ($(this).closest("control-feedback__item").is("control-feedback__item--active")) {
-//     //     console.log("работает")
-//     // }
-// })
-
 $(document).on("click", ".control-feedback__item", function() {
     if (!$(this).is(".control-feedback__item--active")) {
         // console.log("нет класса актив");
@@ -20,3 +11,16 @@ $(document).on("click", ".control-feedback__item", function() {
     }
 });
 
+// const feedbackButtons = document.querySelectorAll(".control-feedback__item")
+// const feedbackTabs = document.querySelectorAll(".feedback-person")
+// console.log(feedbackTabs)
+// feedbackButtons.forEach((element, index) => {
+//     element.addEventListener("click", function(e) {
+//         feedbackButtons.forEach((button, i) => {
+//             button.classList.remove("control-feedback__item--active")
+//             feedbackTabs[i].classList.remove("feedback-person--active")
+//         })
+//         feedbackTabs[index].classList.add("feedback-person--active")
+//         element.classList.add("control-feedback__item--active")
+//     })
+// })
